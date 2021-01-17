@@ -54,4 +54,10 @@ public class TuruShaker : MonoBehaviour
             }
         }
     }
+
+    public void ChangeTarget(GameObject target)
+    {
+        sphire10 = target;
+        _rigid = target.GetComponent<Rigidbody>();
+    }
 }

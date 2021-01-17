@@ -6,8 +6,8 @@ public class RopeJump : MonoBehaviour
 {
     [SerializeField]
     private GameObject Tarzan;
-
-    private bool isJump = false;
+    [SerializeField]
+    private PlayerStatus status;
 
     /// <summary>
     /// ジャンプにかける時間(Frame)
@@ -24,6 +24,7 @@ public class RopeJump : MonoBehaviour
     /// </summary>
     [SerializeField]
     private float wight = 3.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +34,17 @@ public class RopeJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isJump)
+        if (status.state != PlayerStatus.State.ROPE)
             return;
 
         if (Input.GetKeyDown("space"))
         {
             JumpStart();
+        }
+
+        if (Input.GetKeyDown("p"))
+        {
+            wight *= -1;
         }
     }
 
@@ -48,7 +54,8 @@ public class RopeJump : MonoBehaviour
     /// 20:3
     void JumpStart()
     {
-        isJump = true;
+        status.state = PlayerStatus.State.JUMP;
+        Tarzan.transform.parent = null;
         StartCoroutine(Move());
     }
 
@@ -57,8 +64,6 @@ public class RopeJump : MonoBehaviour
         var y = 0.0f;
         var z = -(t / 2);
 
-       
-
         var temp = 0.0f;
 
         z += 1;
@@ -66,6 +71,11 @@ public class RopeJump : MonoBehaviour
         for (int i = 0; i < t; i++)
         {
             yield return new WaitForFixedUpdate();
+
+            if (status.state != PlayerStatus.State.JUMP)
+            {
+                yield break;
+            }
 
             Vector3 pos = Tarzan.transform.position;
 
@@ -82,11 +92,8 @@ public class RopeJump : MonoBehaviour
             pos.z += wight / t;
            
             Tarzan.transform.position = pos;
-            print(pos.y -0.96f);
 
         }
-
-        isJump = false;
 
     }
 }
