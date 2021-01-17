@@ -24,19 +24,19 @@ namespace StateManager
          * @param Touchphase phase タッチ状態
          * @access public
          */
-        public a(bool flag = false, Vector2? position = null, TouchPhase phase = TouchPhase.Began)
-        {
-            this._touch_flag = flag;
-            if (position == null)
-            {
-                this._touch_position = new Vector2(0, 0);
-            }
-            else
-            {
-                this._touch_position = (Vector2)position;
-            }
-            this._touch_phase = phase;
-        }
+        //public void Start(bool flag = false, Vector2? position = null, TouchPhase phase = TouchPhase.Began)
+        //{
+        //    this._touch_flag = flag;
+        //    if (position == null)
+        //    {
+        //        this._touch_position = new Vector2(0, 0);
+        //    }
+        //    else
+        //    {
+        //        this._touch_position = (Vector2)position;
+        //    }
+        //    this._touch_phase = phase;
+        //}
 
         /**
          * 更新
@@ -96,9 +96,9 @@ namespace StateManager
          *
          * @access public
          */
-        public a getTouch()
-        {
-            return new a(this._touch_flag, this._touch_position, this._touch_phase);
-        }
+        //public a getTouch()
+        //{
+        //    //return new a(this._touch_flag, this._touch_position, this._touch_phase);
+        //}
     }
 }
