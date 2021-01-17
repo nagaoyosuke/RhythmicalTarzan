@@ -68,7 +68,7 @@ public class RopeJump : MonoBehaviour
 
         z += 1;
 
-        for (int i = 0; i < t; i++)
+        while (true)
         {
             yield return new WaitForFixedUpdate();
 
@@ -90,10 +90,9 @@ public class RopeJump : MonoBehaviour
 
             pos.y += y;
             pos.z += wight / t;
-           
+
             Tarzan.transform.position = pos;
 
         }
-
-    }
+    }    
 }
