@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 05892229ef81848668f8a14ddabafdd1
   - enabled: 1
-    path: Assets/Scenes/DeveloppScenes/CameraMove1.unity
-    guid: e747a68424b4f43098bdf2285f26abb0
-  - enabled: 1
     path: Assets/Scenes/ManagerScene.unity
     guid: 2df106aefe0004740918241efa74278c
+  - enabled: 1
+    path: Assets/Scenes/Result.unity
+    guid: 346291f635b1a43599265ffef42c6b19
+  - enabled: 1
+    path: Assets/Scenes/DeveloppScenes/CameraMove1.unity
+    guid: e747a68424b4f43098bdf2285f26abb0
   m_configObjects: {}

@@ -101,6 +101,11 @@ public static class Save{
     public static MainGameFlag maingameFlag = MainGameFlag.STARTCAMERA;
 
     /// <summary>
+    /// 到達距離
+    /// </summary>
+    public static int GollMeter;
+
+    /// <summary>
     /// ハイスコア以外を初期化する。初めから遊ぶときに使う
     /// </summary>
     public static void ReSet(){
