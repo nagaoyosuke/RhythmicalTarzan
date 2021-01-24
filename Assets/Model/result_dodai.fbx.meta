@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 225a6c0c40e2f422b808c92f8c59e182
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bird1:pSphere2
+    100002: bird2:pSphere2
+    100004: glass3:pasted__pCube1
+    100006: glass4:pasted__pCube1
+    100008: group
+    100010: group1
+    100012: group2
+    100014: monkey:group
+    100016: monkey:group1
+    100018: monkey:pasted__pCube5
+    100020: monkey:pasted__pCube6
+    100022: monkey:pasted__pCylinder2
+    100024: monkey:pasted__polySurface1
+    100026: monkey:pasted__transform1
+    100028: monkey:pasted__transform2
+    100030: monkey:pasted__transform3
+    100032: monkey:pCube1
+    100034: monkey:transform1
+    100036: monkey:transform2
+    100038: pCylinder1
+    100040: polySurface3
+    100042: rafflesia1:pCylinder1
+    100044: rafflesia2:pCylinder1
+    100046: //RootNode
+    100048: tree1:group2_pasted__pCube1
+    100050: tree2:group2_pasted__pCube1
+    100052: tree2:group2_pasted__pCube1 1
+    100054: tree2:transform1
+    100056: tree2:transform10
+    100058: tree2:transform2
+    100060: tree2:transform3
+    100062: tree2:transform4
+    100064: tree2:transform5
+    100066: tree2:transform6
+    100068: tree2:transform7
+    100070: tree2:transform8
+    100072: tree2:transform9
+    400000: bird1:pSphere2
+    400002: bird2:pSphere2
+    400004: glass3:pasted__pCube1
+    400006: glass4:pasted__pCube1
+    400008: group
+    400010: group1
+    400012: group2
+    400014: monkey:group
+    400016: monkey:group1
+    400018: monkey:pasted__pCube5
+    400020: monkey:pasted__pCube6
+    400022: monkey:pasted__pCylinder2
+    400024: monkey:pasted__polySurface1
+    400026: monkey:pasted__transform1
+    400028: monkey:pasted__transform2
+    400030: monkey:pasted__transform3
+    400032: monkey:pCube1
+    400034: monkey:transform1
+    400036: monkey:transform2
+    400038: pCylinder1
+    400040: polySurface3
+    400042: rafflesia1:pCylinder1
+    400044: rafflesia2:pCylinder1
+    400046: //RootNode
+    400048: tree1:group2_pasted__pCube1
+    400050: tree2:group2_pasted__pCube1
+    400052: tree2:group2_pasted__pCube1 1
+    400054: tree2:transform1
+    400056: tree2:transform10
+    400058: tree2:transform2
+    400060: tree2:transform3
+    400062: tree2:transform4
+    400064: tree2:transform5
+    400066: tree2:transform6
+    400068: tree2:transform7
+    400070: tree2:transform8
+    400072: tree2:transform9
+    2100000: tree2_lambert4
+    2100002: tree2_lambert2
+    2100004: tree2_lambert5
+    2100006: tree2_lambert3
+    2100008: bird1_lambert14
+    2100010: bird1_blinn1
+    2100012: bird1_blinn2
+    2100014: bird1_lambert8
+    2100016: bird1_lambert10
+    2100018: bird1_lambert12
+    2100020: bird1_lambert11
+    2100022: bird1_lambert13
+    2100024: bird1_lambert9
+    2100026: bird2_lambert14
+    2100028: bird2_blinn1
+    2100030: bird2_blinn2
+    2100032: bird2_lambert16
+    2100034: bird2_lambert15
+    2100036: bird2_lambert10
+    2100038: bird2_lambert9
+    2100040: bird2_lambert17
+    2100042: glass3_pasted__lambert4
+    2100044: glass3_lambert2
+    2100046: glass4_pasted__lambert4
+    2100048: glass4_lambert2
+    2100050: rafflesia2_lambert6
+    2100052: rafflesia2_lambert4
+    2100054: rafflesia2_lambert5
+    2100056: rafflesia2_lambert3
+    2100058: rafflesia1_lambert6
+    2100060: rafflesia1_lambert4
+    2100062: rafflesia1_lambert5
+    2100064: rafflesia1_lambert3
+    2100066: map_lambert3
+    2100068: map_lambert2
+    2100070: tree1_lambert4
+    2100072: tree1_lambert2
+    2100074: tree1_lambert5
+    2100076: tree1_lambert3
+    2100078: glass5_pasted__lambert4
+    2300000: tree2:group2_pasted__pCube1
+    3300000: tree2:group2_pasted__pCube1
+    4300000: tree2:group2_pasted__pCube1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

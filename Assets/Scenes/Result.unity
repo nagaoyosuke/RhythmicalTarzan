@@ -589,7 +589,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30EA\u30BA\u30DF\u30AB\u30EB\u30BF\u30FC\u30B6\u30F3"
+  m_Text: 100m
 --- !u!222 &965198795
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -609,8 +609,9 @@ GameObject:
   - component: {fileID: 1134971291}
   - component: {fileID: 1134971293}
   - component: {fileID: 1134971292}
+  - component: {fileID: 1134971294}
   m_Layer: 5
-  m_Name: Logo
+  m_Name: ScoreView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,6 +672,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134971290}
   m_CullTransparentMesh: 0
+--- !u!114 &1134971294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134971290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7603c82ab625b48789e03e06836bf39a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 965198794}
+  isStartChange: 1
 --- !u!1 &1457511064
 GameObject:
   m_ObjectHideFlags: 0
