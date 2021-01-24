@@ -9,7 +9,11 @@ public class RopeHitCheck : MonoBehaviour
     [SerializeField]
     private PlayerStatus status;
     [SerializeField]
-    private HingeJoint hingeJoint;
+    private Rigidbody rb;
+    [SerializeField]
+    private FixedJoint fixedJoint;
+    [SerializeField]
+    private RopeJump ropeJump;
     [SerializeField]
     private TuruShaker turuShaker;
 
@@ -22,23 +26,31 @@ public class RopeHitCheck : MonoBehaviour
         if (status.state != PlayerStatus.State.JUMP)
             return;
 
-        status.state = PlayerStatus.State.ROPE;
+        status.state = PlayerStatus.State.GRAP;
 
-        if(turuShaker == null)
+        Tarzan.transform.localEulerAngles = Vector3.zero;
+        status.ChangeRBFreeze(RigidbodyConstraints.None);
+        status.ChangeRBFreeze(RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ);
+
+        if (turuShaker == null)
         {
             print("turumanager is null");
             turuShaker = GameObject.FindWithTag("Manager").GetComponent<TuruShaker>();
         }
 
-        var p = other.transform.parent.gameObject;
+        var p = other.transform.root.gameObject;
 
         turuShaker.ChangeTarget(p.GetComponentInChildren<Sakittyo>().gameObject);
 
         LastRope.Enqueue(p);
         //hingeJoint.connectedBody = other.GetComponent<Rigidbody>();
-        Tarzan.transform.parent = other.transform;
+        //fixedJoint.connectedBody = other.GetComponent<Rigidbody>();
+        fixedJoint = other.GetComponent<FixedJoint>();
+        fixedJoint.connectedBody = rb;
+        //Tarzan.transform.parent = other.transform;
+        var t = p.GetComponentInChildren<Mannaka>().gameObject;
         SetLastRope(p, "DontRope");
-        StartCoroutine(RopeWait());
+        StartCoroutine(RopeWait(t));
     }
 
     void SetLastRope(GameObject Rope, string tag_neme)
@@ -53,10 +65,27 @@ public class RopeHitCheck : MonoBehaviour
         }
     }
 
-    IEnumerator RopeWait()
+    IEnumerator RopeWait(GameObject p)
     {
+        yield return new WaitForFixedUpdate();
+        var f = fixedJoint.transform.parent.GetComponent<Rigidbody>();
+        if (f == null)
+            fixedJoint.connectedBody = null;
+        else
+            fixedJoint.connectedBody = f;
+
+        yield return StartCoroutine(ropeJump.DownMove(p.GetComponentInChildren<Mannaka>().transform));
+        fixedJoint = p.GetComponent<FixedJoint>();
+        fixedJoint.connectedBody = rb;
+
         yield return new WaitUntil(() => status.state == PlayerStatus.State.JUMP);
         //hingeJoint.connectedBody = null;
+        f = fixedJoint.transform.parent.GetComponent<Rigidbody>();
+        if (f == null)
+            fixedJoint.connectedBody = null;
+        else
+            fixedJoint.connectedBody = f;
+
         yield return new WaitUntil(() => status.state == PlayerStatus.State.ROPE);
         SetLastRope(null, "Rope");
     }

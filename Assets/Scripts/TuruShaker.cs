@@ -19,7 +19,8 @@ public class TuruShaker : MonoBehaviour
     public GameObject sphire10;
     private Rigidbody _rigid;
 
-    private float _shakePower = 0.1f;
+    [SerializeField]
+    private float _shakePower = 1.1f;
 
     // 初期化
     private void Start()

@@ -48,14 +48,53 @@ public class RopeJump : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 120:18
-    /// 60:9
-    /// 20:3
+
+    public IEnumerator DownMove(Transform t)
+    {
+
+        status.ChangeAnimetion("Grap");
+
+        var t_y = Tarzan.transform.position.y;
+        var g_t = t.position.y;
+        var y = t_y;
+        var add = 0.1f;
+
+        if (t_y >= g_t)
+            add *= -1.0f;
+
+        if(t.gameObject == null)
+        {
+            status.state = PlayerStatus.State.ROPE;
+            yield break;
+        }
+
+
+        while (true)
+        {
+            Tarzan.transform.position += new Vector3(0, add, 0);
+            t_y = Tarzan.transform.position.y;
+
+            if (add < 0)
+                if (t_y < g_t)
+                    break;
+            if (add > 0)
+                if (t_y > g_t)
+                    break;
+
+            yield return new WaitForFixedUpdate();
+        }
+
+        status.state = PlayerStatus.State.ROPE;
+        print("bbb");
+
+    }
+
     void JumpStart()
     {
         status.state = PlayerStatus.State.JUMP;
         Tarzan.transform.parent = null;
+        status.ChangeAnimetion("Jump");
+        status.ChangeRBFreeze(RigidbodyConstraints.FreezeAll);
         StartCoroutine(Move());
     }
 
@@ -77,7 +116,7 @@ public class RopeJump : MonoBehaviour
                 yield break;
             }
 
-            Vector3 pos = Tarzan.transform.position;
+            Vector3 pos = Tarzan.transform.localPosition;
 
             var m = t / 2;
             float p = 5.0f * t * t / 20;
@@ -91,7 +130,7 @@ public class RopeJump : MonoBehaviour
             pos.y += y;
             pos.z += wight / t;
 
-            Tarzan.transform.position = pos;
+            Tarzan.transform.localPosition = pos;
 
         }
     }    
