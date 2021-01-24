@@ -15,6 +15,7 @@ public class ScreenFader : MonoBehaviour {
 
 	void Start () {
 		fadeImage = GetComponent<Image> ();
+		fadeImage.enabled = true;
 		red = fadeImage.color.r;
 		green = fadeImage.color.g;
 		blue = fadeImage.color.b;
