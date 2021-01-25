@@ -1,0 +1,158 @@
+fileFormatVersion: 2
+guid: a5fb3133fbb824b1cb73ea20c7dc2224
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: body
+    100002: body 1
+    100004: born:born
+    100006: born:pasted__Chest
+    100008: born:pasted__Head
+    100010: born:pasted__L_Ankle
+    100012: born:pasted__L_Foot
+    100014: born:pasted__L_ForeArm
+    100016: born:pasted__L_Hand
+    100018: born:pasted__L_Leg
+    100020: born:pasted__L_Shoulder
+    100022: born:pasted__L_UpperArm
+    100024: born:pasted__L_UpperLeg
+    100026: born:pasted__Neck
+    100028: born:pasted__R_Ankle
+    100030: born:pasted__R_Foot
+    100032: born:pasted__R_ForeArm
+    100034: born:pasted__R_Hand
+    100036: born:pasted__R_Leg
+    100038: born:pasted__R_Shoulder
+    100040: born:pasted__R_UpperArm
+    100042: born:pasted__R_UpperLeg
+    100044: born:pasted__Spain1
+    100046: born:pasted__Spain2
+    100048: born:pasted__Upper_Chest
+    100050: eyes
+    100052: gollira
+    100054: //RootNode
+    100056: transform1
+    100058: transform2
+    400000: body
+    400002: body 1
+    400004: born:born
+    400006: born:pasted__Chest
+    400008: born:pasted__Head
+    400010: born:pasted__L_Ankle
+    400012: born:pasted__L_Foot
+    400014: born:pasted__L_ForeArm
+    400016: born:pasted__L_Hand
+    400018: born:pasted__L_Leg
+    400020: born:pasted__L_Shoulder
+    400022: born:pasted__L_UpperArm
+    400024: born:pasted__L_UpperLeg
+    400026: born:pasted__Neck
+    400028: born:pasted__R_Ankle
+    400030: born:pasted__R_Foot
+    400032: born:pasted__R_ForeArm
+    400034: born:pasted__R_Hand
+    400036: born:pasted__R_Leg
+    400038: born:pasted__R_Shoulder
+    400040: born:pasted__R_UpperArm
+    400042: born:pasted__R_UpperLeg
+    400044: born:pasted__Spain1
+    400046: born:pasted__Spain2
+    400048: born:pasted__Upper_Chest
+    400050: eyes
+    400052: gollira
+    400054: //RootNode
+    400056: transform1
+    400058: transform2
+    2100000: gollira_black
+    2100002: gollira_skin
+    2100004: tooth_eye
+    2100006: blinn2
+    4300000: body
+    9500000: //RootNode
+    13700000: body
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
