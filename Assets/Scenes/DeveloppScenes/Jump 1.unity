@@ -253,6 +253,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.7499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_Limits.max
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.7499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_Limits.max
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4102866886997804355, guid: 5e6f14f8ba5674425a2175d11b429024,
         type: 3}
       propertyPath: m_ConnectedBody
@@ -308,32 +328,12 @@ PrefabInstance:
       propertyPath: m_Limits.max
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.7499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_Limits.max
-      value: 180
-      objectReference: {fileID: 0}
     - target: {fileID: 3758198249312222999, guid: 5e6f14f8ba5674425a2175d11b429024,
         type: 3}
       propertyPath: m_Limits.max
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6358998610133218107, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_Limits.max
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.7499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
         type: 3}
       propertyPath: m_Limits.max
       value: 20
@@ -547,6 +547,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.7499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_Limits.max
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.7499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
+        type: 3}
+      propertyPath: m_Limits.max
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4102866886997804355, guid: 5e6f14f8ba5674425a2175d11b429024,
         type: 3}
       propertyPath: m_ConnectedBody
@@ -602,32 +622,12 @@ PrefabInstance:
       propertyPath: m_Limits.max
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.7499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2707594025934847331, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_Limits.max
-      value: 180
-      objectReference: {fileID: 0}
     - target: {fileID: 3758198249312222999, guid: 5e6f14f8ba5674425a2175d11b429024,
         type: 3}
       propertyPath: m_Limits.max
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6358998610133218107, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_Limits.max
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.7499999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3941685809307823481, guid: 5e6f14f8ba5674425a2175d11b429024,
         type: 3}
       propertyPath: m_Limits.max
       value: 20

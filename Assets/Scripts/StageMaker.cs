@@ -35,6 +35,7 @@ public class StageMaker : MonoBehaviour
         lastStage = Instantiate(stagePrefab);
         lastStage.transform.position = startPosition;
         lastStage.transform.position += new Vector3(0, 0, distanceZ * makedCount);
+        lastStage.transform.localEulerAngles = new Vector3(0, 90, 0);
 
         StartCoroutine(MakedEndWait());
     }
