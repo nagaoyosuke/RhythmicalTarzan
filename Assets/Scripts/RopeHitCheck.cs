@@ -40,7 +40,6 @@ public class RopeHitCheck : MonoBehaviour
 
         var p = other.transform.root.gameObject;
 
-        turuShaker.ChangeTarget(p.GetComponentInChildren<Sakittyo>().gameObject);
 
         LastRope.Enqueue(p);
         //hingeJoint.connectedBody = other.GetComponent<Rigidbody>();
@@ -77,6 +76,7 @@ public class RopeHitCheck : MonoBehaviour
         yield return StartCoroutine(ropeJump.DownMove(p.GetComponentInChildren<Mannaka>().transform));
         fixedJoint = p.GetComponent<FixedJoint>();
         fixedJoint.connectedBody = rb;
+        turuShaker.ChangeTarget(p.GetComponentInChildren<Sakittyo>().gameObject);
 
         yield return new WaitUntil(() => status.state == PlayerStatus.State.JUMP);
         //hingeJoint.connectedBody = null;

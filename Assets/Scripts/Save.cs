@@ -103,13 +103,13 @@ public static class Save{
     /// <summary>
     /// 到達距離
     /// </summary>
-    public static int GollMeter;
+    public static int GollMeter = 1;
 
     /// <summary>
     /// ハイスコア以外を初期化する。初めから遊ぶときに使う
     /// </summary>
     public static void ReSet(){
-        
+        GollMeter = 1;
         FlagReSet();
     }
 

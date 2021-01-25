@@ -29,20 +29,22 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 
     public static void SelectScene(string scene_name)
     {
-        switch (scene_name)
-        {
-            case "Title":
-                GoTitle();
-                break;
-            case "Main":
-                GoMain();
-                break;
-            case "Result":
-                GoResult();
-                break;
-            default:
-                print(scene_name + "シーンはないよ");
-                break;
-        }
+        SceneManager.LoadScene(scene_name);
+
+        //switch (scene_name)
+        //{
+        //    case "Title":
+        //        GoTitle();
+        //        break;
+        //    case "Main":
+        //        GoMain();
+        //        break;
+        //    case "Result":
+        //        GoResult();
+        //        break;
+        //    default:
+        //        print(scene_name + "シーンはないよ");
+        //        break;
+        //}
     }
 }

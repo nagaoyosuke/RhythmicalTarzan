@@ -5,6 +5,8 @@ using UnityEngine;
 public class RopeJump : MonoBehaviour
 {
     [SerializeField]
+    private GameObject CameraObj;
+    [SerializeField]
     private GameObject Tarzan;
     [SerializeField]
     private PlayerStatus status;
@@ -53,35 +55,68 @@ public class RopeJump : MonoBehaviour
     {
 
         status.ChangeAnimetion("Grap");
-
+        var c_z = CameraObj.transform.position.z;
         var t_y = Tarzan.transform.position.y;
+        var t_z = Tarzan.transform.position.z + 7.0f;
         var g_t = t.position.y;
         var y = t_y;
         var add = 0.1f;
 
+        var t_end = false;
+        var c_end = false;
+
         if (t_y >= g_t)
             add *= -1.0f;
 
-        if(t.gameObject == null)
+        var c_add = 0.1f;
+
+        if (c_z >= t_z)
+            c_add *= -1.0f;
+
+        if (t.gameObject == null)
         {
             status.state = PlayerStatus.State.ROPE;
             yield break;
         }
 
+        Tarzan.transform.position = new Vector3(Tarzan.transform.position.x, Tarzan.transform.position.y, t.transform.position.z - 0.8f);
+
 
         while (true)
         {
-            Tarzan.transform.position += new Vector3(0, add, 0);
-            t_y = Tarzan.transform.position.y;
+            if (t_end && c_end)
+                break;
 
-            if (add < 0)
-                if (t_y < g_t)
-                    break;
-            if (add > 0)
-                if (t_y > g_t)
-                    break;
+            if (!t_end)
+            {
+                Tarzan.transform.position += new Vector3(0, add, 0);
+                t_y = Tarzan.transform.position.y;
+
+                if (add < 0)
+                    if (t_y < g_t)
+                        t_end = true;
+                if (add > 0)
+                    if (t_y > g_t)
+                        t_end = true;
+                if (t_end)
+                    status.state = PlayerStatus.State.ROPE;
+            }
+
+            if (!c_end)
+            {
+                CameraObj.transform.position += new Vector3(0, 0, c_add);
+                c_z = CameraObj.transform.position.z;
+
+                if (c_add < 0)
+                    if (c_z < t_z)
+                        c_end = true;
+                if (c_add > 0)
+                    if (c_z > t_z)
+                        c_end = true;
+            }
 
             yield return new WaitForFixedUpdate();
+
         }
 
         status.state = PlayerStatus.State.ROPE;
@@ -104,6 +139,7 @@ public class RopeJump : MonoBehaviour
         var z = -(t / 2);
 
         var temp = 0.0f;
+        var startMeter = (float)Save.GollMeter;
 
         z += 1;
 
@@ -131,6 +167,10 @@ public class RopeJump : MonoBehaviour
             pos.z += wight / t;
 
             Tarzan.transform.localPosition = pos;
+            var cp = CameraObj.transform.position;
+            CameraObj.transform.position += new Vector3(0,0, wight / t);
+            startMeter += wight / t;
+            Save.GollMeter = (int)(startMeter);
 
         }
     }    
