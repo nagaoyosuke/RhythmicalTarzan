@@ -16,14 +16,14 @@ public class StageMaker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Save.ReSet();
     }
 
     // Update is called once per frame
     void Update()
     {
         if(!makingStage)
-            if (Save.GollMeter % 150 == 0)
+            if (Save.GollMeter % 100 == 0)
                 MakeStage();
     }
 

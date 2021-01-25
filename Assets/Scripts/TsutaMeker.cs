@@ -40,7 +40,10 @@ public class TsutaMeker : MonoBehaviour
         GameObject.Destroy(lastTsutas.Dequeue());
         var lastTsuta = Instantiate(tsutaPrefab);
         lastTsuta.transform.position = startPosition;
-        lastTsuta.transform.position += new Vector3(0, 0, distanceZ * makedCount);
+        print((float)makedCount * 0.1f);
+        //lastTsuta.transform.position += new Vector3(0, 0, (distanceZ * makedCount) + ((float)makedCount * makedCount * 0.05f));
+        lastTsuta.transform.position += new Vector3(0, 0, (distanceZ * makedCount));
+
         lastTsutas.Enqueue(lastTsuta);
 
         StartCoroutine(MakedEndWait());

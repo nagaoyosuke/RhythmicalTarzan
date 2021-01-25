@@ -120,7 +120,6 @@ public class RopeJump : MonoBehaviour
         }
 
         status.state = PlayerStatus.State.ROPE;
-        print("bbb");
 
     }
 
@@ -131,6 +130,8 @@ public class RopeJump : MonoBehaviour
         status.ChangeAnimetion("Jump");
         status.ChangeRBFreeze(RigidbodyConstraints.FreezeAll);
         StartCoroutine(Move());
+        //Sound.PlaySe("hoi");
+        Sound.RandamPlaySe("arayotto", "norinori", "ahaha", "cool");
     }
 
     IEnumerator Move()

@@ -55,6 +55,7 @@ namespace StateManager
                 {
                     this._touch_flag = true;
                     this._touch_phase = TouchPhase.Began;
+                    Sound.PlaySe("tap",1,1,1);
                     Debug.Log("押した瞬間");
                 }
 

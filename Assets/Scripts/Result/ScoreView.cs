@@ -18,7 +18,6 @@ public class ScoreView : MonoBehaviour
         selectable.mChanged += s =>
         {
             TextChange();
-            print("ddd");
         };
         selectable.SetValueWithoutCallback(Save.GollMeter);
         if (isStartChange)
