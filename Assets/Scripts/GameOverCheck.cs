@@ -20,14 +20,20 @@ public class GameOverCheck : MonoBehaviour
         if (isEnd)
             return;
         if (Tarzan.transform.position.y < -1.7f)
-            StartCoroutine(GameOver());
+            Water();
+        
     }
 
-    IEnumerator GameOver()
+    void Water()
+    {
+        Sound.PlaySe("water");
+        StartCoroutine(GameOver());
+    }
+
+    public IEnumerator GameOver()
     {
         isEnd = true;
         Sound.StopBgm();
-        Sound.PlaySe("water");
         yield return new WaitForSeconds(1.0f);
         Sound.PlayBgm("Result1");
         MySceneManager.SelectScene("Result");

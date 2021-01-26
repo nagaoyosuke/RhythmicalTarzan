@@ -38,7 +38,7 @@ public class RopeHitCheck : MonoBehaviour
             turuShaker = GameObject.FindWithTag("Manager").GetComponent<TuruShaker>();
         }
 
-        var p = other.transform.root.gameObject;
+        var p = other.GetComponentInParent<ParentCheck>().gameObject;
 
 
         LastRope.Enqueue(p);

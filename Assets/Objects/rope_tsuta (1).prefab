@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9195417750706181873}
   - component: {fileID: 9195417750715971889}
+  - component: {fileID: 6307724567681907864}
   m_Layer: 9
   m_Name: rope_tsuta (1)
   m_TagString: Untagged
@@ -53,6 +54,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6307724567681907864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9195417750706473617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061ceae78c0a542ac925c158928c22a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9195417750706473619
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,9 +852,10 @@ GameObject:
   - component: {fileID: 1166849690816347773}
   - component: {fileID: 3274349760054583316}
   - component: {fileID: 2025378403}
+  - component: {fileID: 6782936601276078807}
   m_Layer: 9
   m_Name: joint1
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -926,6 +940,19 @@ FixedJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!135 &6782936601276078807
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9195417750706473715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23
+  m_Center: {x: -0.19, y: 0, z: 0}
 --- !u!1 &9195417750706473717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,9 +1203,10 @@ GameObject:
   - component: {fileID: 9195417752531026958}
   - component: {fileID: 9195417752531026945}
   - component: {fileID: 2025378404}
+  - component: {fileID: 4668841522105233486}
   m_Layer: 9
   m_Name: joint2
-  m_TagString: Untagged
+  m_TagString: Rope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1263,6 +1291,19 @@ FixedJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!135 &4668841522105233486
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9195417750706473721}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23
+  m_Center: {x: -0.19, y: 0, z: 0}
 --- !u!1 &9195417750706473723
 GameObject:
   m_ObjectHideFlags: 0
